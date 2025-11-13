@@ -295,7 +295,8 @@
           <h4 class="font-semibold" style="color:var(--primary)">Curso Técnico — SENAI</h4>
           <p class="text-[color:var(--muted)] text-sm">
             Comecei o curso técnico do SENAI em <strong>Análise e Desenvolvimento de Sistemas</strong> — 2024–2025.
-            Desenvolvendo lógica de programação e projetos reais. <br> <strong><a href="#projetos" class="cursor-pointer">Clique aqui para
+            Desenvolvendo lógica de programação e projetos reais. <br> <strong><a href="#projetos"
+                class="cursor-pointer">Clique aqui para
                 ir</a></strong>.
           </p>
         </div>
@@ -360,143 +361,177 @@
 
 
 
-<!-- HABILIDADES -->
-<section id="habilidades" class="py-20 text-center relative z-10" data-aos="fade-up">
-  <h3 class="text-3xl font-bold mb-10 gradient-text">Linguagens & Ferramentas</h3>
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="py-20 text-center relative z-10" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-10 gradient-text">Linguagens & Ferramentas</h3>
 
-  <div id="skills" class="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto relative z-10">
+    <div id="skills" class="grid grid-cols-4 md:grid-cols-4 sm:grid-cols-2 gap-20 max-w-5xl mx-auto relative z-10">
 
 
-            <style>
-        /* 🔧 Animação e tooltip só aparecem ao passar o mouse */
-        .skill {
-          position: relative;
-        }
+     <style>
+  /* 🔧 Animação e tooltip só aparecem ao passar o mouse */
+  .skill {
+    position: relative;
+  }
 
-        .skill span {
-          opacity: 0;
-          transform: translateY(10px);
-          pointer-events: none;
-          transition: opacity 0.3s ease, transform 0.3s ease;
-        }
+  .skill span {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 
-        .skill:hover span {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      </style>
-    <!-- HTML -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="HTML5" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Define a estrutura e o conteúdo das páginas web.
-      </span>
+    /* Limite de tamanho e quebra de linha */
+    max-width: 200px; /* você pode ajustar conforme precisar */
+    white-space: normal; /* permite quebrar linha */
+    text-align: center; /* centraliza o texto */
+  }
+
+  .skill:hover span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+  .skill span {
+    max-width: 150px; /* menor em telas pequenas */
+    font-size: 0.75rem;
+  }
+}
+
+</style>
+<!-- HTML -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="HTML5" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    HTML5
+  </span>
+</div>
+
+<!-- CSS -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="CSS3" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    CSS3
+  </span>
+</div>
+
+<!-- JavaScript -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="JavaScript" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    JavaScript
+  </span>
+</div>
+
+<!-- React -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="React" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    React
+  </span>
+</div>
+
+<!-- PHP -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="PHP" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    PHP
+  </span>
+</div>
+
+<!-- MySQL -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="MySQL" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    MySQL
+  </span>
+</div>
+
+<!-- Git -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="Git" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    Git
+  </span>
+</div>
+
+<!-- Python -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+       class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="Python" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    Python
+  </span>
+</div>
+
+<!-- Tailwind -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="tailwind.png" class="w-16 transition-transform group-hover:scale-110 relative z-30"
+       alt="Tailwind CSS" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    Tailwind
+  </span>
+</div>
+
+<!-- Bootstrap -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="bootstrap.png" class="w-16 transition-transform group-hover:scale-110 relative z-30"
+       alt="Bootstrap" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    Bootstrap
+  </span>
+</div>
+
+<!-- Power BI -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="powerBI.png" class="w-16 transition-transform group-hover:scale-110 relative z-30"
+       alt="Power BI" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    Power BI
+  </span>
+</div>
+<!-- Supabase -->
+<div class="skill group flex flex-col items-center cursor-pointer relative z-20">
+  <img src="supabase.png" class="w-16 transition-transform group-hover:scale-110 relative z-30"
+       alt="Supabase" />
+  <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 ease-in-out
+               text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
+    Supabase
+  </span>
+</div>
+
+
     </div>
-
-    <!-- CSS -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="CSS3" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Responsável pelo visual e estilo de cada elemento.
-      </span>
-    </div>
-
-    <!-- JavaScript -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="JavaScript" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Adiciona interatividade e comportamento dinâmico ao site.
-      </span>
-    </div>
-
-    <!-- React -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="React" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Cria interfaces modernas e reativas com componentes reutilizáveis.
-      </span>
-    </div>
-
-    <!-- PHP -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="PHP" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Linguagem de back-end usada para gerar páginas dinâmicas e sistemas web.
-      </span>
-    </div>
-
-    <!-- MySQL -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="MySQL" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Banco de dados relacional usado para armazenar e gerenciar informações.
-      </span>
-    </div>
-
-    <!-- Git -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="Git" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Sistema de controle de versão que facilita o trabalho em equipe.
-      </span>
-    </div>
-
-    <!-- Python -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="Python" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Linguagem versátil, usada em automação, análise de dados e IA.
-      </span>
-    </div>
-
-    <!-- Tailwind -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="tailwind.png"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="Tailwind CSS" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Framework utilitário que permite criar designs responsivos com rapidez.
-      </span>
-    </div>
-
-    <!-- Bootstrap -->
-    <div class="skill group flex flex-col items-center cursor-pointer relative z-20">
-      <img src="bootstrap.png"
-           class="w-16 transition-transform group-hover:scale-110 relative z-30" alt="Bootstrap" />
-      <span class="absolute bottom-[-3rem] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
-                   transition-all duration-300 ease-in-out
-                   text-sm bg-black/80 text-white px-3 py-1 rounded-lg shadow-lg z-40 whitespace-nowrap">
-        Framework CSS com componentes prontos e foco em responsividade.
-      </span>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 
 
@@ -554,9 +589,11 @@
         <h4 class="font-semibold mb-2" style="color:var(--primary)">RetroAquários — Projeto Criativo</h4>
         <p class="text-[color:var(--muted)] text-sm mb-3">
           Site fictício criado para a venda de um produto imaginário, idealizado pelos educadores
-          <a href="https://www.linkedin.com/in/marcelo-bruno-fuentes-125732121/" target="_blank"><strong class="cursor-pointer">Marcelo Bruno
+          <a href="https://www.linkedin.com/in/marcelo-bruno-fuentes-125732121/" target="_blank"><strong
+              class="cursor-pointer">Marcelo Bruno
               Fuentes</strong></a> e
-          <a href="https://www.linkedin.com/in/josiane-matiolli-1501/" target="_blank"><strong class="cursor-pointer">Josiane
+          <a href="https://www.linkedin.com/in/josiane-matiolli-1501/" target="_blank"><strong
+              class="cursor-pointer">Josiane
               Matiolli</strong></a>, com foco em design e criatividade.
         </p>
         <a href="https://github.com/Gabriel11122007/retroaquarios" target="_blank"
@@ -597,18 +634,18 @@
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" class="max-w-5xl mx-auto px-6 py-20 text-center relative z-20">
+  <section id="contato" class="max-w-5xl mx-auto px-6 py-20 text-center">
     <h3 class="text-3xl font-bold mb-8 gradient-text">Contato</h3>
     <p class="text-[color:var(--muted)] mb-6">Quer conversar ou colaborar? Me chame:</p>
     <div class="flex justify-center gap-4">
-      <a href="mailto:ggabrielmarcelino@gmail.com" 
-        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer">Email</a>
+      <a href="mailto:ggabrielmarcelino@gmail.com"
+        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer relative z-20">Email</a>
       <a href="https://instagram.com/gazeta_.72" target="_blank"
-        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer">Instagram</a>
+        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer relative z-20">Instagram</a>
       <a href="https://github.com/Gabriel11122007" target="_blank"
-        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer">GitHub</a>
+        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer relative z-20">GitHub</a>
       <a href="https://wa.me/5516997795333" target="_blank"
-        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer">WhatsApp</a>
+        class="text-[color:var(--primary)] hover:opacity-90 cursor-pointer relative z-20">WhatsApp</a>
     </div>
   </section>
 
